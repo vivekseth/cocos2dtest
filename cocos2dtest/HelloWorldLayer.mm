@@ -8,6 +8,7 @@
 
 // Import the interfaces
 #import "HelloWorldLayer.h"
+#import "testScene.h"
 
 // Needed to obtain the Navigation Controller
 #import "AppDelegate.h"
@@ -106,6 +107,10 @@ enum {
 	CCMenuItemLabel *reset = [CCMenuItemFont itemWithString:@"Reset" block:^(id sender){
 		[[CCDirector sharedDirector] replaceScene: [HelloWorldLayer scene]];
 	}];
+    
+    CCMenuItemLabel *newScene = [CCMenuItemFont itemWithString:@"New Scene" block:^(id sender){
+		[[CCDirector sharedDirector] replaceScene: [testScene scene]];
+	}];
 	
 	// Achievement Menu Item using blocks
 	CCMenuItem *itemAchievement = [CCMenuItemFont itemWithString:@"Achievements" block:^(id sender) {
@@ -135,7 +140,7 @@ enum {
 		[leaderboardViewController release];
 	}];
 	
-	CCMenu *menu = [CCMenu menuWithItems:itemAchievement, itemLeaderboard, reset, nil];
+	CCMenu *menu = [CCMenu menuWithItems:itemAchievement, itemLeaderboard, reset, newScene, nil];
 	
 	[menu alignItemsVertically];
 	

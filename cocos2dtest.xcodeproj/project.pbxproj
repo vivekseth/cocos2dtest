@@ -181,6 +181,14 @@
 		32AE8A4D165FCE650022CA53 /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = 32AE8A4C165FCE650022CA53 /* GLES-Render.mm */; };
 		32AE8A50165FCE650022CA53 /* PhysicsSprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = 32AE8A4F165FCE650022CA53 /* PhysicsSprite.mm */; };
 		32AE8A52165FCE650022CA53 /* blocks.png in Resources */ = {isa = PBXBuildFile; fileRef = 32AE8A51165FCE650022CA53 /* blocks.png */; };
+		32AE8A5D165FD3A20022CA53 /* testScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 32AE8A5C165FD3A20022CA53 /* testScene.mm */; };
+		32AE8A60165FDC8B0022CA53 /* explosion.png in Resources */ = {isa = PBXBuildFile; fileRef = 32AE8A5F165FDC8B0022CA53 /* explosion.png */; };
+		32AE8A63165FF8D10022CA53 /* VSSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AE8A62165FF8D10022CA53 /* VSSprite.m */; };
+		32AE8A66165FFAA30022CA53 /* VSSpriteSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AE8A65165FFAA30022CA53 /* VSSpriteSheet.m */; };
+		32AE8A6916605BFA0022CA53 /* bear.png in Resources */ = {isa = PBXBuildFile; fileRef = 32AE8A6716605BFA0022CA53 /* bear.png */; };
+		32AE8A6A16605BFA0022CA53 /* bear.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32AE8A6816605BFA0022CA53 /* bear.plist */; };
+		32AE8A791662C1D70022CA53 /* VSSmartSpriteSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AE8A781662C1D70022CA53 /* VSSmartSpriteSheet.m */; };
+		32AE8A7E1662CC020022CA53 /* VSSmartSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AE8A7D1662CC010022CA53 /* VSSmartSprite.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -545,6 +553,19 @@
 		32AE8A4E165FCE650022CA53 /* PhysicsSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhysicsSprite.h; sourceTree = "<group>"; };
 		32AE8A4F165FCE650022CA53 /* PhysicsSprite.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PhysicsSprite.mm; sourceTree = "<group>"; };
 		32AE8A51165FCE650022CA53 /* blocks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blocks.png; path = Resources/blocks.png; sourceTree = "<group>"; };
+		32AE8A5B165FD3A20022CA53 /* testScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testScene.h; sourceTree = "<group>"; };
+		32AE8A5C165FD3A20022CA53 /* testScene.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = testScene.mm; sourceTree = "<group>"; };
+		32AE8A5F165FDC8B0022CA53 /* explosion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = explosion.png; sourceTree = "<group>"; };
+		32AE8A61165FF8D00022CA53 /* VSSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSSprite.h; sourceTree = "<group>"; };
+		32AE8A62165FF8D10022CA53 /* VSSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSSprite.m; sourceTree = "<group>"; };
+		32AE8A64165FFAA30022CA53 /* VSSpriteSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSSpriteSheet.h; sourceTree = "<group>"; };
+		32AE8A65165FFAA30022CA53 /* VSSpriteSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSSpriteSheet.m; sourceTree = "<group>"; };
+		32AE8A6716605BFA0022CA53 /* bear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bear.png; sourceTree = "<group>"; };
+		32AE8A6816605BFA0022CA53 /* bear.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = bear.plist; sourceTree = "<group>"; };
+		32AE8A771662C1D70022CA53 /* VSSmartSpriteSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSSmartSpriteSheet.h; sourceTree = "<group>"; };
+		32AE8A781662C1D70022CA53 /* VSSmartSpriteSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSSmartSpriteSheet.m; sourceTree = "<group>"; };
+		32AE8A7C1662CC010022CA53 /* VSSmartSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSSmartSprite.h; sourceTree = "<group>"; };
+		32AE8A7D1662CC010022CA53 /* VSSmartSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSSmartSprite.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -607,12 +628,16 @@
 				32AE8A43165FCE650022CA53 /* AppDelegate.mm */,
 				32AE8A45165FCE650022CA53 /* HelloWorldLayer.h */,
 				32AE8A46165FCE650022CA53 /* HelloWorldLayer.mm */,
+				32AE8A5B165FD3A20022CA53 /* testScene.h */,
+				32AE8A5C165FD3A20022CA53 /* testScene.mm */,
+				32AE8A7B1662C28C0022CA53 /* Helper Classes */,
 				32AE8A48165FCE650022CA53 /* IntroLayer.h */,
 				32AE8A49165FCE650022CA53 /* IntroLayer.mm */,
 				32AE8A4B165FCE650022CA53 /* GLES-Render.h */,
 				32AE8A4C165FCE650022CA53 /* GLES-Render.mm */,
 				32AE8A4E165FCE650022CA53 /* PhysicsSprite.h */,
 				32AE8A4F165FCE650022CA53 /* PhysicsSprite.mm */,
+				32AE8A5E165FDC7A0022CA53 /* Images */,
 				32AE8838165FCE610022CA53 /* Resources */,
 				32AE8852165FCE610022CA53 /* libs */,
 				32AE8A3E165FCE650022CA53 /* Supporting Files */,
@@ -1142,6 +1167,31 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		32AE8A5E165FDC7A0022CA53 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				32AE8A6716605BFA0022CA53 /* bear.png */,
+				32AE8A6816605BFA0022CA53 /* bear.plist */,
+				32AE8A5F165FDC8B0022CA53 /* explosion.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		32AE8A7B1662C28C0022CA53 /* Helper Classes */ = {
+			isa = PBXGroup;
+			children = (
+				32AE8A61165FF8D00022CA53 /* VSSprite.h */,
+				32AE8A62165FF8D10022CA53 /* VSSprite.m */,
+				32AE8A7C1662CC010022CA53 /* VSSmartSprite.h */,
+				32AE8A7D1662CC010022CA53 /* VSSmartSprite.m */,
+				32AE8A64165FFAA30022CA53 /* VSSpriteSheet.h */,
+				32AE8A65165FFAA30022CA53 /* VSSpriteSheet.m */,
+				32AE8A771662C1D70022CA53 /* VSSmartSpriteSheet.h */,
+				32AE8A781662C1D70022CA53 /* VSSmartSpriteSheet.m */,
+			);
+			name = "Helper Classes";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1206,6 +1256,9 @@
 				32AE8851165FCE610022CA53 /* iTunesArtwork in Resources */,
 				32AE898F165FCE640022CA53 /* ChangeLog in Resources */,
 				32AE8A52165FCE650022CA53 /* blocks.png in Resources */,
+				32AE8A60165FDC8B0022CA53 /* explosion.png in Resources */,
+				32AE8A6916605BFA0022CA53 /* bear.png in Resources */,
+				32AE8A6A16605BFA0022CA53 /* bear.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1367,6 +1420,11 @@
 				32AE8A4A165FCE650022CA53 /* IntroLayer.mm in Sources */,
 				32AE8A4D165FCE650022CA53 /* GLES-Render.mm in Sources */,
 				32AE8A50165FCE650022CA53 /* PhysicsSprite.mm in Sources */,
+				32AE8A5D165FD3A20022CA53 /* testScene.mm in Sources */,
+				32AE8A63165FF8D10022CA53 /* VSSprite.m in Sources */,
+				32AE8A66165FFAA30022CA53 /* VSSpriteSheet.m in Sources */,
+				32AE8A791662C1D70022CA53 /* VSSmartSpriteSheet.m in Sources */,
+				32AE8A7E1662CC020022CA53 /* VSSmartSprite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1472,6 +1530,7 @@
 				32AE8A57165FCE650022CA53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

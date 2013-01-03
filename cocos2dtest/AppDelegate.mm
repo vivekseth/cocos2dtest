@@ -17,7 +17,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-	// Create the main window
+	
+//    NSString * string = @"%@%@";
+//    NSString * string2 = [NSString stringWithFormat:string, @"hello", @"world"];
+//    NSLog(@"%@", string2);
+    
+    // Create the main window
 	window_ = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 	
 	
